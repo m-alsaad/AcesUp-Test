@@ -2,4 +2,4 @@ language: python
 python:
     - "3.6"
 script:
-    - ./src/AcesUp/runtests.sh
+    - src/AcesUp/runtests.sh
