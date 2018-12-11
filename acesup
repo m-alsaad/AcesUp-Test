@@ -1,0 +1,13 @@
+#!/usr/local/bin/python
+
+import sys
+from importlib import reload
+reload(sys)
+sys.path.append('./src/AcesUp')
+from AcesUp import AcesUp
+
+
+game = AcesUp()
+exitCode = game.main(len(sys.argv), str(sys.argv))
+
+print('\nAcesUp exited with status: ' + str(exitCode) + '\nThanks for playing!\n')
