@@ -3,3 +3,6 @@ python:
     - "3.6"
 script:
     - src/AcesUp/runtests.sh
+
+before_install:
+    - chmod +x ./src/AcesUp/runtests.sh
